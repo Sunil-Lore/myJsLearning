@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript Function with parameter -->
+
+    <script>
+        function discount(purchase){
+            if(purchase>1500){
+                charges = purchase*0.8;
+            }
+            else charges = purchase;
+            document.write(charges + "<br />");
+        }
+        discount(1200);
+        discount(2000);
+
+    </script>
+
+</body>
+</html>
