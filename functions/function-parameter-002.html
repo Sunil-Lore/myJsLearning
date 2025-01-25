@@ -13,7 +13,9 @@
             if(purchase>1500){
                 charges = purchase*0.8;
             }
-            else charges = purchase;
+            else {
+                charges = purchase;
+            }
             document.write(charges + "<br />");
         }
         discount(1200);
