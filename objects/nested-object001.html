@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested object</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            name:'Anil',
+            age:99,
+            job:'Mentor',
+            address:{
+                city:'Mumbai',
+                country:'India'
+            }
+        }
+        document.getElementById('demo1').innerHTML = 
+        person.name + '<br />' + person.address.city;
+    </script>
+</body>
+</html>
