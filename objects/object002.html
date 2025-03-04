@@ -6,14 +6,16 @@
     <title>Simple JavaScript Object</title>
 </head>
 <body>
-    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
     <script>
         const person = {
             name:'Anil',
             age:99,
             job:'Mentor'
         }
-        document.getElementById('demo').innerHTML = person.name + '<br />' + person.job;
+        document.getElementById('demo1').innerHTML = person.name + '<br />' + person.job;
+        document.getElementById('demo2').innerHTML = person['name'] + '<br />' + person['age'];
     </script>
 </body>
 </html>
