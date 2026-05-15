@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Using body.style.color</title>
+  <title>Using CSS selectors</title>
 </head>
 <body>
   <div>
-    <p>Hello World!</p>
+  <p id="one">Hello World!</p>
   </div>
-  <p>First paragraph</p>
-  <p>Second paragraph</p>
-  <p>Third paragraph</p>
+  <p id="two">First paragraph</p>
+  <p id="three">Second paragraph</p>
+  <p id="four">Third paragraph</p>
 
 
-  <button onclick="changeColor()">Show Page Title</button>
+  <button onclick="cssSelector()">click here</button>
 
   <script>
-    function changeColor() {
-      document.body.style.color='forestgreen';
+    function cssSelector() {
+      let para=document.getElementsByTagName('p');
+      para[0].style.color="red";
+      para[1].style.fontSize='32px';
+      para[2].style.backgroundColor='silver';
+      para[3].style.fontFamily='Courier';
      }
   </script>
 </body>
