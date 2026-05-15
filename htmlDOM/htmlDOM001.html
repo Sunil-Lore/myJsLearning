@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting HTML elements by ID</title>
+</head>
+<body>
+    //
+    // Selecting HTML elements by ID
+    //
+    <p id="test"></p>
+    <br />
+    <button onclick="changeText()">Add text</button>
+    <br />
+    <script>
+        function changeText(){
+            let para=document.getElementById("test").innerHTML="Hello World!";
+            return para;
+        }
+    </script>
+</body>
+</html>
