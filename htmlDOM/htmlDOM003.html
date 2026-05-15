@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using getElementsByTagName</title>
+</head>
+<body>
+  <p>First paragraph</p>
+  <p>Second paragraph</p>
+  <p>Third paragraph</p>
+  <p></p>
+
+  <button onclick="showText()">add Text</button>
+
+  <script>
+    function showText() {
+      let elements = document.getElementsByTagName("p");
+      let newPara = elements[3].innerHTML="New Paragraph";      
+      }
+  </script>
+</body>
+</html>
