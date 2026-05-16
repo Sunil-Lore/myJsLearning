@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applying CSS styles one by one</title>
+</head>
+<body>
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Third Paragraph</p>
+    <p>Fourth Paragraph</p>
+    <button onclick="applyStyle()">Apply Style</button>
+    <script>
+        function applyStyle(){
+            let para=document.getElementsByTagName('p');
+            para[0].style.color='MediumPurple';
+            para[0].style.fontFamily='Courier';
+            para[0].style.fontSize='32px';
+            para[0].style.backgroundColor='HotPink';
+            para[0].style.fontWeight='bolder';
+        }
+    </script>
+</body>
+</html>
