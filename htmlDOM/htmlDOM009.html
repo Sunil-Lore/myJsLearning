@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using css classes</title>
+    <style>
+  .highlight {
+    color: red;
+    font-size: 24px;
+    background-color: yellow;
+  }
+</style>
+
+</head>
+<body>
+    /*
+    This is compact, but be careful -
+    it overwrites all existing inline styles on that element.
+    */
+    <p>First Paragraph</p>
+    <p>Second Paragraph</p>
+    <p>Third Paragraph</p>
+    <p>Fourth Paragraph</p>
+    <button onclick="applyStyle()">Apply Style</button>
+    <script>
+        let para = document.getElementsByTagName("p"); // define para
+        function applyStyle(){
+            para[0].classList.add("highlight");
+        }
+    </script>
+</body>
+</html>
