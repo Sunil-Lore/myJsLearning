@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating list item <li> in a list <ul> using JS</title>
+</head>
+<body>
+    <p>First Paragraph</p>
+    <ul id="myList">
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+    <button onclick="showElement()">Show URL</button>
+    <script>
+        function showElement(){
+        let li = document.createElement("li");
+        li.textContent = "New Item";
+        document.getElementById("myList").appendChild(li);
+        }
+    </script>
+</body>
+</html>
