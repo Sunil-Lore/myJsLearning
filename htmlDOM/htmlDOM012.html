@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating button element using JS</title>
+</head>
+<body>
+    <p>First Paragraph</p>
+    <button onclick="showElement()">Show URL</button>
+    <script>
+        function showElement(){
+        let btn = document.createElement("button");
+        btn.textContent = "Click Me!";
+        document.body.appendChild(btn);
+        }
+    </script>
+</body>
+</html>

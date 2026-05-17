@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating element using JS</title>
+</head>
+<body>
+    <p>First Paragraph</p>
+    <button onclick="showElement()">Show URL</button>
+    <script>
+        function showElement(){
+        let newPara = document.createElement("p");  // Create a new <p> element
+        newPara.textContent = "Hello, I was created with JS!";  // Add text inside it
+        document.body.appendChild(newPara);     // Insert it into the body
+        }
+    </script>
+</body>
+</html>
