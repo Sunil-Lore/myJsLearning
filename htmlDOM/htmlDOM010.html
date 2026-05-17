@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Using window.location.href</title>
 </head>
 <body>
-    
+    <p id="getUrl"></p>
+    <button onclick="showUrl()">Show URL</button>
+    <script>
+        function showUrl(){
+            document.getElementById('getUrl').innerHTML=window.location.href;
+        }
+    </script>
 </body>
 </html>
