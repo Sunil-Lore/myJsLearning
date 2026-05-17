@@ -9,14 +9,14 @@
   <p>First paragraph</p>
   <p>Second paragraph</p>
   <p>Third paragraph</p>
+  <p id="showTitle"></p>
 
 
   <button onclick="showText()">Show Page Title</button>
 
   <script>
     function showText() {
-      let elements = document.title;
-      alert(elements);     
+      document.getElementById('showTitle').innerHTML=document.title;
       }
   </script>
 </body>
