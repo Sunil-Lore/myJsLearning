@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating elements with attributes</title>
+</head>
+<body>
+    <p>First Paragraph</p>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+
+    <button onclick="showElement()">Show URL</button>
+    <script>
+        function showElement(){
+        let img = document.createElement("img");
+        img.src = "../img/5.png";
+        img.alt = "Sample Image";
+        img.height="200";
+        img.width="300";
+        img.style.borderRadius="10px";
+        document.body.appendChild(img);
+        }
+    </script>
+</body>
+</html>
