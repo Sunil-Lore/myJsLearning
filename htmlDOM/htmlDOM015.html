@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check document's doctype</title>
+</head>
+<body>
+    <p>First Paragraph</p>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li id="cdt"></li>
+    </ul>
+
+    <button onclick="showDoctype()">Show DOCTYPE</button>
+    /* If you want to show the actual DOCTYPE name (like "html"),
+         you should access the properties of the DocumentType object: */
+    <script>
+        function showDoctype(){
+        let x=document.doctype;
+        document.getElementById('cdt').textContent=x.name;
+
+        }
+    </script>
+</body>
+</html>
